@@ -2,16 +2,12 @@
 
 
 
-/*リセットCSS（sanitize.css）の読み込み
----------------------------------------------------------------------------*/
 @import url("https://unpkg.com/sanitize.css");
 
-/*Google Fonts（M PLUS Rounded 1c）の読み込み
----------------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 
-/*slick.cssの読み込み
----------------------------------------------------------------------------*/
+
 @import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
 
 
@@ -36,8 +32,6 @@ body {
 figure {margin: 0;}
 dd {margin: 0;}
 
-/*table全般の設定*/
-table {border-collapse:collapse;}
 
 /*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
@@ -47,8 +41,7 @@ section + section {
 	padding-top: 30px;	/*sectionの間に空けるスペース*/
 }
 
-/*videoタグ*/
-video {max-width: 100%;}
+
 
 /*iframeタグ*/
 iframe {width: 100%;}
@@ -172,11 +165,7 @@ footer {
 /*リンクテキスト*/
 footer a {text-decoration: none;}
 
-/*著作部分*/
-footer .pr {display: block;}
 
-/*フッターにあるアイコン類
----------------------------------------------------------------------------*/
 /*アイコン類を囲むブロック*/
 ul.icon {
 	list-style: none;
