@@ -140,6 +140,7 @@ footer a {text-decoration: none;}
     border-radius: 10px;	/*画像の角丸。丸くカットしない場合は、この１行を削除。*/
     box-shadow: 3px 3px 8px rgba(0,0,0,0.2);	/*ボックスの影。右へ、下へ、ぼかし幅の順。0,0,0は黒色のことで0.2は色が20%出た状態のこと。*/
 　　height: 40vw;
+    object-fit: cover;
 }
 
 /*丸いページナビボタン全体を囲むブロック*/
