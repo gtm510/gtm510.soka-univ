@@ -170,7 +170,24 @@ footer {
 	background: #452571;	/*色*/
 }
 
+.pagetop-show {display: block;}
 
+.pagetop a {
+	display: block;text-decoration: none;text-align: center;
+	width: 50px;		/*幅*/
+	line-height: 50px;	/*高さ*/
+	position: fixed;
+	right: 30px;		/*右からの配置場所指定*/
+	bottom: 30px;		/*下からの配置場所指定*/
+	color: #fff;		/*文字色*/
+	background: rgba(0,0,0,0.4);	/*背景色。0,0,0は黒色のことで0.4は色が40%出た状態。*/
+	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+}
+
+/*マウスオン時*/
+.pagetop a:hover {
+	background: rgba(0,0,0,0.8);	/*背景色。0,0,0は黒色のことで0.8は色が80%出た状態。*/
+}
 
 
 
