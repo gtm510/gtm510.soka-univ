@@ -17,7 +17,7 @@
 html,body {
 	overflow-x: hidden;
     min-height: 100%;    /*背景グラデーション用*/
-    font-size: 20px;    /*基準となるフォントサイズ。下の方にある「画面幅800px以上」で基準を大きなサイズに変更しています。*/
+    font-size: 18px;    /*基準となるフォントサイズ。下の方にある「画面幅800px以上」で基準を大きなサイズに変更しています。*/
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 	-webkit-text-size-adjust: none;
     background: linear-gradient(#5ee74e, #16a0db 300px);/*#7b41a8から#452571への背景グラデーション。*/
 	color: #fff;	    /*全体の文字色*/
-	line-height: 3;		/*行間*/
+	line-height: 2;		/*行間*/
 }
 
 /*マージンのリセット*/
