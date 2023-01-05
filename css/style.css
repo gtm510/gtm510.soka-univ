@@ -110,7 +110,14 @@ footer {
 }
 
 
-
+.ani{
+    transition: 1s all;
+    opacity: 0;
+}
+ 
+.ani.move{
+    opacity: 1;
+}
 
 
 
