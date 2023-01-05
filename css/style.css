@@ -102,21 +102,13 @@ main p {
 
 /*細々微調整*/
 h2 + h3, h2 + p, h3 + p {
-    margin-top: -20px;
+    margin-top: -20p;
 }
-
-/*フッター設定
----------------------------------------------------------------------------*/
-footer small {font-size: 100%;}
 
 footer {
-	font-size: 0.6rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	text-align: center;		/*内容をセンタリング*/
-	padding: 20px;			/*ボックス内の余白*/
+	padding: 20px;			
 }
 
-/*リンクテキスト*/
-footer a {text-decoration: none;}
 
 
 
@@ -137,8 +129,8 @@ footer a {text-decoration: none;}
 }
 
 .slick-slide img {
-    border-radius: 10px;	/*画像の角丸。丸くカットしない場合は、この１行を削除。*/
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);	/*ボックスの影。右へ、下へ、ぼかし幅の順。0,0,0は黒色のことで0.2は色が20%出た状態のこと。*                             
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);	                           
     height: 40vw;
     object-fit: cover;
 }
