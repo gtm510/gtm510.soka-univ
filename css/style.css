@@ -101,6 +101,10 @@ main p {
 	margin-bottom: 40px;	
 }
 
+.imp {
+	color: #ff0008;
+}
+
 h2 + h3, h2 + p, h3 + p {
     margin-top: -20p;
 }
