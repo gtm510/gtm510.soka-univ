@@ -15,35 +15,28 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 html,body {
-	overflow-x: hidden;
-    min-height: 100%;    /*背景グラデーション用*/
-    font-size: 18px;    /*基準となるフォントサイズ。下の方にある「画面幅800px以上」で基準を大きなサイズに変更しています。*/
+    font-size: 20px; 
 }
 
 body {
 	font-family: 'M PLUS Rounded 1c', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	-webkit-text-size-adjust: none;
-    background: linear-gradient(#5ee74e, #16a0db 300px);/*#7b41a8から#452571への背景グラデーション。*/
-	color: #fff;	    /*全体の文字色*/
-	line-height: 2;		/*行間*/
+	color: #000000;	   
+	line-height: 2;
+	font-weight: 800;
 }
 
-/*マージンのリセット*/
 figure {margin: 0;}
 dd {margin: 0;}
 
 
-/*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-/*section全般の設定*/
 section + section {
-	padding-top: 30px;	/*sectionの間に空けるスペース*/
+	padding-top: 30px;
 }
 
 
-/*リンクテキスト全般の設定
----------------------------------------------------------------------------*/
 a {
 	color: #fff;	/*文字色*/
 }
@@ -52,18 +45,17 @@ a:hover {
 	color: #eee;	/*マウスオン時の文字色*/
 }
 
-/*headerブロック（ロゴが入った最上段のブロック）
----------------------------------------------------------------------------*/
-/*headerブロック*/
+
 header {
-    text-align: center;		/*中身をセンタリングする*/
-    padding-top: 20px;		/*上に空ける余白*/
+    text-align: center;		
+    padding-top: 20px;		
 }
 
 header #logo {   
     margin: 0;
-    letter-spacing: 0.1em;    /*文字間隔を少しだけ広くとる設定*/
-    font-size: 2.2rem;        /*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+    letter-spacing: 0.1em;    
+    font-size: 2.2rem;       
+    color: #00000;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);    /*テキストの影。右へ、下へ、ぼかし幅の順番。0,0,0は影の色(黒)のことで0.2は色が20%出た状態。*/
 }
 header #logo a {
@@ -73,34 +65,50 @@ header #logo a {
 
 
 
-/*mainブロック
----------------------------------------------------------------------------*/
 main {
-    display: block;		/*IE用*/
-    margin: 50px 20px;	/*上下、左右へのブロックの外側へ空けるスペース*/
+    display: block;	
+    margin: 50px 20px;	
 }
 
-/*ブロック内のh2タグ*/
 main h2 {
     display: inline-block;
-	font-size: 1.6rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	margin-bottom: 50px;	/*下に空けるスペース*/
-    letter-spacing: 0.1em;	/*文字間隔を少しだけ広くとる設定*/
-    border-bottom: 3px solid #fff;	/*下線の幅、線種、色*/
+	font-size: 1.6rem;		
+	margin-bottom: 50px;	
+    letter-spacing: 0.1em;	
+    border-bottom: 3px solid #000000;
 }
 
-/*ブロック内のh3タグ*/
 main h3 {
-	font-size: 1.4rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	margin-bottom: 40px;	/*下に空けるスペース*/
+	font-size: 1.4rem;		
+	margin-bottom: 40px;	
+	display: inline-block;
 }
 
-/*mainブロックのpタグ*/
+.box {
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	border: 1px solid gray;
+	background-color: rgb(210, 232, 247);
+	box-sizing: border-box;
+}
+
+.box li {
+	margin-top: 2px;
+	margin-left: 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.box a {
+	text-decoration: none;
+}
+
+
 main p {
-	margin-bottom: 40px;	/*下へ空けるスペース*/
+	margin-bottom: 40px;	
 }
 
-/*細々微調整*/
 h2 + h3, h2 + p, h3 + p {
     margin-top: -20p;
 }
@@ -123,8 +131,6 @@ footer {
 
 
 
-/*スライドショー（slickを使用）
----------------------------------------------------------------------------*/
 .mainimg {
 	position: relative;
 	height: 50vw;
@@ -132,7 +138,7 @@ footer {
 }
 
 .slick-slide {
-    margin: 10px;	/*スライドショー画像同士の間にあけるスペース*/
+    margin: 10px;	
 }
 
 .slick-slide img {
@@ -142,66 +148,61 @@ footer {
     object-fit: cover;
 }
 
-/*丸いページナビボタン全体を囲むブロック*/
+
 .slick-dots {
 	text-align: center;
 	width: 100%;
 	margin:0;padding: 0;
 	line-height: 1;
 	position: absolute;
-	bottom: 20px;	/*下からの配置場所指定*/
+	bottom: 20px;	
 }
 
-/*丸いページナビボタン１個あたりの設定*/
+
 .slick-dots li {
 	display: inline-block;
 	margin: 0 10px;
 	cursor: pointer;
 }
 
-/*buttonタグ*/
 .slick-dots li button {
 	display: block;
     padding: 0;
     border: none;
-    border: 1px solid #452571;	/*枠線の幅、線種、色*/
-	text-indent: -9999px;	/*デフォルトで文字が出るので画面の外に追い出す指定*/
-	width: 12px;			/*ボタンの幅*/
-	height: 12px;			/*ボタンの高さ*/
-	border-radius: 50%;		/*丸くする指定*/
-	background: #fff;		/*背景色。白。*/
+    border: 1px solid #452571;
+	text-indent: -9999px;	
+	width: 12px;			
+	height: 12px;			
+	border-radius: 50%;		
+	background: #fff;		
 }
 
-/*buttonのアクティブ時（現在表示されている画像を示すボタン）*/
 .slick-dots li.slick-active button {
-	background: #452571;	/*色*/
+	background: #452571;	
 }
 
 .pagetop-show {display: block;}
 
 .pagetop a {
 	display: block;text-decoration: none;text-align: center;
-	width: 50px;		/*幅*/
-	line-height: 50px;	/*高さ*/
+	width: 50px;		
+	line-height: 50px;	
 	position: fixed;
-	right: 30px;		/*右からの配置場所指定*/
-	bottom: 30px;		/*下からの配置場所指定*/
-	color: #fff;		/*文字色*/
-	background: rgba(0,0,0,0.4);	/*背景色。0,0,0は黒色のことで0.4は色が40%出た状態。*/
-	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+	right: 30px;		
+	bottom: 30px;		
+	color: #fff;		
+	background: rgba(0,0,0,0.4);	
+	border: 1px solid #fff;	
 }
 
-/*マウスオン時*/
 .pagetop a:hover {
-	background: rgba(0,0,0,0.8);	/*背景色。0,0,0は黒色のことで0.8は色が80%出た状態。*/
+	background: rgba(0,0,0,0.8);	
 }
 
 
 
 
-/*---------------------------------------------------------------------------
-ここから下は画面幅600px以上の追加指定
----------------------------------------------------------------------------*/
+
 @media screen and (min-width:600px) {
 
 /*メニューの設定
